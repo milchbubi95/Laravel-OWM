@@ -233,6 +233,7 @@ class LaravelOWMController extends Controller
             ],
             'weather' => [
                 'id' => $obj->weather->id,
+                'main' => $obj->weather->main,
                 'description' => $obj->weather->description,
                 'description_slug' => str_slug($obj->weather->description),
                 'icon' => $obj->weather->icon
